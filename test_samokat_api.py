@@ -21,8 +21,8 @@ def get_order_by_track(track_number):
     
     return response
 
-
+#Суханова Юлия 1-я когорта Финальный проект. Инженер по тестированию плюс
 def test_order_creation_and_retrieval():
     track_number = create_order()
     order_details = get_order_by_track(track_number)
-    assert order_details.status_code == 200
+    assert order_details.status_code == 200, "Тест пройден"
